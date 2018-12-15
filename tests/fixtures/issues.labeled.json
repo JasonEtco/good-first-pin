@@ -1,7 +1,8 @@
 {
   "action": "labeled",
   "issue": {
-    "node_id": "123=="
+    "node_id": "123==",
+    "title": "My issue"
   },
   "label": {
     "name": "good first issue"

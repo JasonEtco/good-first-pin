@@ -15,9 +15,9 @@
   "scripts": {
     "start": "probot run ./lib/index.js",
     "build": "rimraf lib && tsc -p tsconfig.json",
-    "dev": "nodemon --exec \"npm start\"",
     "lint": "tslint --project tests",
     "test": "tsc --noEmit -p tests && jest --coverage && npm run lint",
+    "test:update": "tsc --noEmit -p tests && jest --coverage -u && npm run lint",
     "postinstall": "npm run build"
   },
   "dependencies": {
@@ -43,9 +43,6 @@
     "node": "10.x.x"
   },
   "jest": {
-    "setupFiles": [
-      "<rootDir>/tests/setup.ts"
-    ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/lib/"
     ],

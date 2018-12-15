@@ -1,7 +1,8 @@
 import nock from 'nock'
 import { Probot } from 'probot'
 import goodFirstPin from '../src'
-import payload from './fixtures/issues.labeled.json'
+// tslint:disable-next-line:no-var-requires
+const payload = require('./fixtures/issues.labeled.json')
 
 nock.disableNetConnect()
 
