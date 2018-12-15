@@ -5,12 +5,6 @@
   <p align="center"><a href="https://travis-ci.org/JasonEtco/good-first-pin"><img src="https://badgen.now.sh/travis/JasonEtco/good-first-pin" alt="Build Status"></a> <a href="https://codecov.io/gh/JasonEtco/good-first-pin/"><img src="https://badgen.now.sh/codecov/c/github/JasonEtco/good-first-pin" alt="Codecov"></a></p>
 </p>
 
-<p align="center">
-  <a href="https://github.com/apps/good-first-pin" title="Install good-first-pin">
-    <img src="https://user-images.githubusercontent.com/10660468/50038144-c3f66300-ffe8-11e8-8575-e9cfba084e2c.png" alt="Install good-first-pin">
-  </a>
-</p>
-
 ## How it works
 
 After installing the app on your repository, it listens issues that have been labeled <kbd>Good First Issue</kbd>, then pins that issue (if fewer than 3 have already been pinned). This is also triggered by new issues with the label!
