@@ -7,7 +7,7 @@
 
 ## How it works
 
-After installing the app on your repository, it listens issues that have been labeled <kbd>Good First Issue</kbd>, then pins that issue (if fewer than 3 have already been pinned). This is also triggered by new issues with the label!
+After [installing the app](https://github.com/apps/good-first-pin) on your repository, it listens issues that have been labeled <kbd>Good First Issue</kbd>, then pins that issue (if fewer than 3 have already been pinned). This is also triggered by new issues with the label!
 
 ![gfp](https://user-images.githubusercontent.com/10660468/50038115-52b6b000-ffe8-11e8-8e73-d407be36f0cf.gif)
 
