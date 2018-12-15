@@ -1,8 +1,7 @@
 import nock from 'nock'
 import { Probot } from 'probot'
 import goodFirstPin from '../src'
-
-const payload = require('./fixtures/issues.labeled.json')
+import payload from './fixtures/issues.labeled.json'
 
 nock.disableNetConnect()
 
@@ -56,7 +55,6 @@ describe('good-first-pin', () => {
     // Receive a webhook event
     await probot.receive(event)
 
-    console.log(nock.pendingMocks())
     // If this is false, it never made a GraphQL request
     expect(nock.isDone()).toBe(true)
   })

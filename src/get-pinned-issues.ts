@@ -1,7 +1,7 @@
 import { Context } from 'probot'
 import { PREVIEW_HEADER } from './constants'
 
-const query = `query ($owner: String!, $repo: String!) { 
+const query = `query ($owner: String!, $repo: String!) {
   repository (owner: $owner, name: $repo) {
     pinnedIssues (first: 3) {
       totalCount
