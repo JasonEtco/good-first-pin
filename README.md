@@ -1,6 +1,9 @@
-<h3 align="center">Good First Pin [bot]</h3>
-<p align="center">A GitHub App built with <a href="https://github.com/probot/probot">Probot</a> that rotates pinned issues based on <kbd>Good First Issue</kbd> labels<p>
-<p align="center"><a href="https://travis-ci.org/JasonEtco/good-first-pin"><img src="https://badgen.now.sh/travis/JasonEtco/good-first-pin" alt="Build Status"></a> <a href="https://codecov.io/gh/JasonEtco/good-first-pin/"><img src="https://badgen.now.sh/codecov/c/github/JasonEtco/good-first-pin" alt="Codecov"></a></p>
+<p align="center">
+  <img src="https://avatars2.githubusercontent.com/in/22304?s=128&v=4" width="64">
+  <h3 align="center"><a href="https://github.com/apps/good-first-pin">good-first-pin[bot]</a></h3>
+  <p align="center">A GitHub App built with <a href="https://github.com/probot/probot">Probot</a> that rotates pinned issues based on <kbd>Good First Issue</kbd> labels<p>
+  <p align="center"><a href="https://travis-ci.org/JasonEtco/good-first-pin"><img src="https://badgen.now.sh/travis/JasonEtco/good-first-pin" alt="Build Status"></a> <a href="https://codecov.io/gh/JasonEtco/good-first-pin/"><img src="https://badgen.now.sh/codecov/c/github/JasonEtco/good-first-pin" alt="Codecov"></a></p>
+</p>
 
 <p align="center">
   <a href="https://github.com/apps/good-first-pin" title="Install good-first-pin">
