@@ -35,13 +35,29 @@ describe('good-first-pin', () => {
   it('does nothing if the label added does not match', async () => {
     nock('https://api.github.com').post('/graphql').reply(200)
 
-    // Rename to the label to something that doesn't match
-    event.payload.label.name = 'nope'
+    // Receive a webhook event
+    await probot.receive({
+      name: 'issues',
+      payload: {
+        action: 'labeled',
+        label: { name: 'nope' }
+      }
+    })
+
+    // If this is false, it never made a GraphQL request
+    expect(nock.isDone()).toBe(false)
+    nock.cleanAll()
+  })
+
+  it('does nothing if there are already three pinned issues', async () => {
+    nock('https://api.github.com')
+      .post('/graphql').reply(200, { data: { repository: { pinnedIssues: { nodes: [1, 2, 3] } } } })
 
     // Receive a webhook event
     await probot.receive(event)
 
+    console.log(nock.pendingMocks())
     // If this is false, it never made a GraphQL request
-    expect(nock.isDone()).toBe(false)
+    expect(nock.isDone()).toBe(true)
   })
 })

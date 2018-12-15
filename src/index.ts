@@ -6,6 +6,7 @@ const GOOD_FIRST_REGEX = /^good\sfirst\sissue$/i
 
 export = (app: Application) => {
   app.on('issues.labeled', async (context) => {
+    console.log(context.payload.label.name)
     // Only act on GFI labels
     if (!GOOD_FIRST_REGEX.test(context.payload.label.name)) return
 
