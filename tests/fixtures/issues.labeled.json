@@ -1,0 +1,16 @@
+{
+  "action": "labeled",
+  "issue": {
+    "node_id": "123==",
+    "title": "My issue"
+  },
+  "label": {
+    "name": "good first issue"
+  },
+  "repository": {
+    "name": "good-first-pin",
+    "owner": {
+      "login": "JasonEtco"
+    }
+  }
+}
